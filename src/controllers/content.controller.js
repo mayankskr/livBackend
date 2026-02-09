@@ -1,7 +1,4 @@
-import {
-  sendDataService,
-  updateDataService
-} from "../services/content.service.js";
+import { sendDataService,updateDataService } from "../services/content.service.js";
 
 import { asyncWrap } from "../utils/errorHandler.js";
 

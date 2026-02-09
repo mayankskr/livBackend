@@ -1,8 +1,6 @@
 import Content from "../models/siteContent.model.js";
 import connectionDB from "../db/connectionDB.js";
 
-await connectionDB()
-
 // Send data
 export const sendDataService = async()=>{
     const doc = await Content.find().lean();
