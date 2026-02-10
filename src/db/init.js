@@ -16,7 +16,7 @@ async function initContent() {
     // Insert default content
     await Content.create({
       headerPhoneButton: "+91-9311900247",
-      heroHeading: "अफ्रीकन मुलोंडो की शक्ति के साथ रात को थकना मना है।",
+      heroHeading: "अफ्रीकन पुरुषों जैसी ताकत, जोश और स्टैमिना पाएं।",
       heroPara: "रोज़ महसूस करें जवानी वाले दिन।",
       infoHeading: "सिर्फ चुनिंदा पुरुषों के लिए - Limited Edition Formula.",
       infoPara: "बिना थके बने रहे पावर टॉनिक से अफ्रीकन पुरुषों जैसी पावर पाए",
