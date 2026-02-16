@@ -1,5 +1,4 @@
 import Content from "../models/siteContent.model.js";
-import connectionDB from "../db/connectionDB.js";
 
 // Send data
 export const sendDataService = async()=>{
