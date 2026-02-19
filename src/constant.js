@@ -1,1 +1,1 @@
-export const db_name = "Admin_livDb"
+export const db_name = "Admin_livDb";

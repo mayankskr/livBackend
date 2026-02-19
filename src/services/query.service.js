@@ -1,6 +1,14 @@
-import Query from "../models/query.model";
+import Query from "../models/query.model.js";
 
-export const queryDataService = async()=>{
-    const doc = await Query.find.lean();
-    return doc[0]
-}
+export const getQueriesService = async () => {
+  // Return all queries instead of just the first one
+  return await Query.find().lean();
+};
+
+export const createQueryService = async (data) => {
+  return await Query.create(data);
+};
+
+export const deleteQueryService = async (id) => {
+  return await Query.findByIdAndDelete(id);
+};

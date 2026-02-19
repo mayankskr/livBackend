@@ -2,7 +2,7 @@ import express from "express";
 
 import {
   getContentController,
-  updateContentController
+  updateContentController,
 } from "../controllers/content.controller.js";
 
 const router = express.Router();

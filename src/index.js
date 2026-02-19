@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
-import app from "./app.js"; 
+import app from "./app.js";
 import connectionDB from "./db/connectionDB.js";
 import contentRoutes from "./routes/content.route.js";
-
+import queryRoutes from "./routes/query.route.js";
 // Load environment variables
 dotenv.config();
 
@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
    but app.js is usually preferred for logic)
 ================================ */
 app.use("/api/content", contentRoutes);
-
+app.use("/api/query", queryRoutes);
 /* ===============================
    Server Start
 ================================ */
@@ -27,7 +27,6 @@ async function startServer() {
     app.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
-
   } catch (error) {
     console.error("❌ Server failed to start:", error.message);
     process.exit(1);

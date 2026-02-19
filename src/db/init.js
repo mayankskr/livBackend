@@ -29,16 +29,15 @@ async function initContent() {
       ingredientsPoint2: "अश्वगंधा",
       ingredientsPoint3: "गोक्षुरा",
       ingredientsPoint4: "शतावरी जैसी जड़ी-बूटियों के लाभ पाने के लिए",
-      ingredientsPhoneButton: "जल्द बुक करें +91-9311900247"
+      ingredientsPhoneButton: "जल्द बुक करें +91-9311900247",
     });
 
     console.log("Content initialized.");
   } catch (err) {
     console.error("Initialization error:", err);
     process.exit(1);
-  }
-  finally{
-    process.exit(0)
+  } finally {
+    process.exit(0);
   }
 }
 
